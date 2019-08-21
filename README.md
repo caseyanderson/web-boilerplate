@@ -13,7 +13,7 @@ Generic project setup for local web development. `gulpjs` compiles `scss` on cha
     * `npm --version`
     * `npx --version`
 
-If you are missing these you can install them from `homebrew` (`brew install node`):
+    If you are missing these you can install them from `homebrew` (`brew install node`):
 
 2. install `gulp` globally (on your CPU): `npm install gulp-cli -g`
 3. clone this repo into a project directory (named `PROJECTNAME`), `cd` into that directory: `git clone git@github.com:caseyanderson/web-starter.git PROJECTNAME && cd PROJECTNAME`
