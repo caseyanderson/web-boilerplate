@@ -2,7 +2,7 @@
 
 *Note*: HT to Kevin Powell, and specifically [this](https://www.youtube.com/watch?v=QgMQeLymAdU) video, for the inspiration/assistance
 
-Generic project setup for local web development. `gulpjs` compiles `scss` on change (using `gulp-sass`), all changes to `html` and `scss` files are synced via `BrowserSync`.
+Generic project setup for local web development. `gulpjs` (v4.0) compiles `scss` on change (using `gulp-sass`), all changes to `html` and `scss` files are synced via `BrowserSync`.
 
 
 ## installation
