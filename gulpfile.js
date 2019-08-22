@@ -1,7 +1,12 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const cssnano = require("cssnano");
 const browserSync = require('browser-sync').create();
 
+
+// paths to scss, html files
 var paths = {
   styles: {
     src: "./scss/**/*.scss",
@@ -15,11 +20,9 @@ var paths = {
 
 // compile scss into css
 function style(){
-  // find scss file
   return gulp.src(paths.styles.src)
-  // pass that file through sass compiler
   .pipe(sass().on('error', sass.logError))
-  // where do i save compiled css
+  .pipe(postcss([autoprefixer(), cssnano()]))
   .pipe(gulp.dest(paths.styles.dest))
   // stream changes to all browsers
   .pipe(browserSync.stream());
